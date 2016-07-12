@@ -1,0 +1,264 @@
+html, body
+  margin 0
+  padding 0
+  background-color grey
+
+.container
+  width 1000px
+  height 1500px
+  margin 0 auto
+  background-image url('../images/background.png')
+  display flex
+  flex-flow column nowrap
+  align-items center
+
+.header
+  width 900px
+  height 140px
+  display flex
+  flex-flow row nowrap
+  justify-content space-between
+  align-items flex-end
+
+.logo
+  width 160px
+  height 100px
+  background-image url("../images/logo.png");
+  background-size contain
+  background-repeat no-repeat
+  margin-bottom -20px
+  margin-left -5px
+
+.stamp
+  width 260px
+  height 105px
+  background-image url("../images/stamp.png");
+  background-size contain
+  background-repeat no-repeat
+  margin-bottom: -15px;
+  margin-right: -5px;
+
+.delo
+  width 260px
+  height 120px
+  background-image url("../images/delo.png")
+  background-size contain
+  background-repeat no-repeat
+  margin-top 40px
+
+.info
+  margin-top: 59px;
+  margin-right: 18px;
+
+
+/*общая информация*/
+
+.box
+  height 65px
+  display flex
+
+.key
+  height 65px
+  font-family PT Sans
+  font-weight bold
+  font-size 22px
+  display flex
+  align-items center
+  background-size contain
+  background-repeat repeat
+  background-position bottom
+  padding-right 35px
+  flex-shrink: 0
+
+.value
+  height 40px
+  background-image url('../images/underline.png')
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%
+  .val
+    margin-left: 20px
+    outline none
+    border none;
+    background transparent
+    color #231f20
+    font-family "Courier New", Courier, monospace
+    font-size 30px
+    width 600px
+
+
+/*html-academy*/
+
+.html-academy
+  width 880px
+  height 45px
+  display flex
+  justify-content: space-around;
+
+.graduate
+  height 45px
+  flex-shrink 0
+  display flex
+  align-items center
+  p
+   font-size 23px
+   font-family PT Sans
+   font-weight 600
+   color #2f1b15
+
+.link
+  height 45px
+  display flex
+  align-items center
+  a
+    color #18368a
+    font-size 23px
+    font-family PT Sans
+    font-weight 600
+
+
+/*кнопки*/
+
+.buttons
+  height 45px
+  display flex
+
+.btn-one
+  height 45px
+  flex-shrink 0
+  display flex
+  align-items center
+  p
+   color #2f1b15
+   font-family PT Sans
+   font-size 22px
+   font-weight 600
+.btn-two
+  height 45px
+  flex-shrink 0
+  display flex
+  align-items center
+  p
+   color #2f1b15
+   font-family PT Sans
+   font-size 22px
+   font-weight 600
+
+input[type="radio"]
+  display none
+
+input[type="radio"] + label
+  background-image url(../images/ellipse-unchecked.png)
+  background-position: bottom;
+  width 45px
+  height 45px
+
+input[type="radio"]:checked + label
+  background-image url(../images/ellipse-checked.png)
+  width 45px
+  height 45px
+
+.empty
+  height 45px
+  width 350px
+
+
+/*практические навыки*/
+
+.skills-wrap
+  width 760px
+  height 150px
+  display flex
+  flex-flow column nowrap
+  justify-content space-between
+
+.practice
+  height 40px
+  width 760px
+  p
+   color #2f1b15
+   font-family PT Sans
+   font-size 22px
+   font-weight 600
+
+
+.star
+  height 100%
+  width 760px
+  p
+   color #3d3d3d
+   font-family PT Sans
+   font-size 14px
+
+
+/*чекбоксы*/
+
+.row
+  width 800px
+  height 35px
+  display flex
+  justify-content space-between
+
+  .col
+    width 260px
+    display flex
+    flex-flow row nowrap
+
+
+    .col-check
+      width 50px
+      display flex
+      align-items: center;
+      justify-content: center;
+
+    .text
+      width 100%
+      display flex
+      align-items: center
+      font-family: PT Sans
+      font-weight: bold;
+      font-size: 21px
+      color: #2f1b15;
+      margin-top: 10px
+      .odd
+        margin-top: 50px
+
+input[type="checkbox"]
+  display none
+
+input[type="checkbox"] + label
+  background-image: url(../images/checkbox.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  width 25px
+  height 25px
+
+
+input[type="checkbox"]:checked + label
+  background-image: url(../images/checkbox-checked.png);
+  background-repeat: no-repeat;
+  width 25px
+  height 25px
+
+
+
+.range
+  height 20px
+  margin-top: 135px
+
+.slider
+  width 760px
+
+input[type="range"]
+  -webkit-appearance:none;
+  width 750px
+  height 6px
+  background-image: url(../images/range-bar.png);
+
+.slider input::-webkit-slider-thumb
+    -webkit-appearance:none;
+    width 20px
+    height 20px
+    background-image: url(../images/thumb.png);
+    background-repeat: no-repeat;

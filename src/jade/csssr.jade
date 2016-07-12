@@ -1,0 +1,232 @@
+doctype html
+html
+  head
+    title delo
+    meta(charset='utf-8')
+    link(href='../stylus/csssr.css' rel='stylesheet' type='text/css')
+    link( href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic', rel='stylesheet', type='text/css' )
+  body
+    .container
+      .header
+        .logo
+        .stamp
+      .delo
+      
+      section.info
+        .box 
+         .key
+          p
+           |Полное ФИО
+         .value
+           input.val(type="text" name="title" value="Юлия Сухомлинова" placeholder="Введите свое имя")
+          
+        .box 
+         .key
+          p
+           |Год рождения
+         .value
+           input.val(type="text" name="title" value="1988" placeholder="Введите свой год рождения")
+
+        .box 
+         .key
+          p
+           |Место жительства
+         .value
+            input.val(type="text" name="title" value="г. Москва, Россия" placeholder="Введите название своего города")
+        
+        
+        .box 
+         .key
+          p
+           |Скайп
+         .value
+            input.val(type="text" name="title" value="Yulia Suhomlinova" placeholder="Введите свой скайп")
+        
+        .box 
+         .key
+          p
+           |Почта
+         .value
+            input.val(type="text" name="title" value="julssuhomli@gmail.com" placeholder="Введите свою почту")
+      
+      section.html-academy
+       .graduate
+         p
+          |Выпускник  
+       .link
+         a(href='htmlacademy.ru') htmlacademy.ru
+       .buttons
+        .btn-one 
+         p 
+          |Да
+         input(type="radio" class="btn" id="btn-1" name="buttons-group")
+         label(for="btn-1")
+        .btn-two 
+         p 
+          |Нет
+         input(type="radio" class="btn" id="btn-2" name="buttons-group" checked)
+         label(for="btn-2")
+       .empty
+      
+      section.practical-skills     
+        .skills-wrap
+          .practice
+           p
+            |Практические навыки
+          .star 
+           p
+            |*Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутствие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.   
+          
+      section.checkbox
+        
+        //первый ряд
+        .row
+         .col.col-left
+            .col-check
+              input(type="checkbox" id="check-one" name="check-group" checked)
+              label(for="check-one")
+            .text
+              p
+               |Методология БЭМ
+         .col.col-middle
+            .col-check
+              input(type="checkbox" id="check-two" name="check-group" checked)
+              label(for="check-two")
+            .text
+              p
+               |Jade
+         .col.col-right
+            .col-check
+              input(type="checkbox" id="check-three" name="check-group" checked)
+              label(for="check-three")
+            .text
+              p
+               |Верстка рассылок
+        
+        //второй ряд
+        .row
+         .col.col-left
+            .col-check
+              input(type="checkbox" id="check-four" name="check-group" checked)
+              label(for="check-four")
+            .text
+              p
+               |jQuery  
+         .col.col-middle
+            .col-check
+              input(type="checkbox" id="check-five" name="check-group" checked)
+              label(for="check-five")
+            .text
+              p
+               |Stylus  
+         .col.col-right 
+            .col-check
+              input(type="checkbox" id="check-six" name="check-group" checked)
+              label(for="check-six")
+            .text
+              p
+               |Адаптивная верстка   
+        
+        //третий ряд
+        .row
+         .col.col-left
+            .col-check
+              input(type="checkbox" id="check-seven" name="check-group")
+              label(for="check-seven")
+            .text
+              p
+               |Использую GRUNT    
+         .col.col-middle
+            .col-check
+              input(type="checkbox" id="check-eight" name="check-group")
+              label(for="check-eight")
+            .text
+              p
+               |Знаю (изучаю) Angular   
+         .col.col-right 
+            .col-check
+              input(type="checkbox" id="check-nine" name="check-group")
+              label(for="check-nine")
+            .text
+              p
+               |Использую Dropbox 
+         //четвертый ряд
+        .row
+         .col.col-left
+            .col-check
+              input(type="checkbox" id="check-ten" name="check-group")
+              label(for="check-ten")
+            .text
+              p
+               |HAML    
+         .col.col-middle
+            .col-check
+              
+            .text
+              p
+               |Верстка под Android    
+         .col.col-right 
+            .col-check
+              input(type="checkbox" id="check-twelve" name="check-group" checked)
+              label(for="check-twelve")
+            .text
+              p
+               |Использую Gmail   
+        
+         //пятый ряд
+        .row
+         .col.col-left
+           .col-check
+             input(type="checkbox" id="check-thirteen" name="check-group")
+             label(for="check-thirteen")
+           .text
+              p
+               |SASS  
+         .col.col-middle
+           .col-check
+             input(type="checkbox" id="check-fourteen" name="check-group")
+             label(for="check-fourteen")
+           .text
+              p
+               |Верстка под iOS 
+         .col.col-right 
+           .col-check
+             input(type="checkbox" id="check-fifteen" name="check-group" checked)
+             label(for="check-fifteen")
+           .text
+              p
+               |Использую GitHub 
+        
+        //шестой ряд
+        .row
+         .col.col-left
+           .col-check
+             input(type="checkbox" id="check-sixteen" name="check-group")
+             label(for="check-sixteen")
+           .text
+              p
+               |LESS 
+         .col.col-middle
+           .col-check
+             input(type="checkbox" id="check-seventeen" name="check-group")
+             label(for="check-seventeen")
+           .text
+              p.odd
+               |Верстка под Windows Phone 
+         .col.col-right 
+            
+         
+         //седьмой ряд
+        .row
+         .col.col-left
+           .col-check
+             input(type="checkbox" id="check-eighteen" name="check-group")
+             label(for="check-eighteen")
+           .text
+              p
+               |CoffeeScript 
+        
+      section.range
+        
+        .slider
+          input(type="range" min="0" max="10" step="1" value="5")
